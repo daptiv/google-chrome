@@ -25,12 +25,12 @@ desc 'Run foodcritic with default rule set.'
 task :foodcritic do
   puts '@@@TASK: foodcritic'
   cookbook_path = '.'
-  tags          = []
-  fail_tags     = %w(any)
+  tags = []
+  fail_tags = %w(any)
   include_rules = []
 
-  options = { :tags => tags, :fail_tags => fail_tags, :include_rules => include_rules }
-  review  = ::FoodCritic::Linter.new.check([cookbook_path], options)
+  options = {:tags => tags, :fail_tags => fail_tags, :include_rules => include_rules}
+  review = ::FoodCritic::Linter.new.check([cookbook_path], options)
   puts review
   if review.failed?
     STDERR.puts ('Default Foodcritic Failed!!!!!')
@@ -57,17 +57,17 @@ end
 desc 'Run foodcritic with extended rule set'
 task :foodcritic_extended do
   puts '@@@TASK: foodcritic_extended'
-  cookbook_path      = '.'
-  tags               = []
-  fail_tags          = %w(any)
+  cookbook_path = '.'
+  tags = []
+  fail_tags = %w(any)
   # foodcritic_rules is a submodule of the chef-repo.
   extended_rules_dir = File.join(chef_repo_path, 'foodcritic_rules')
 
   if Dir.exists?(extended_rules_dir)
     include_rules = [extended_rules_dir]
-    options       = { :tags => tags, :fail_tags => fail_tags, :include_rules =>
-      include_rules }
-    review        = ::FoodCritic::Linter.new.check([cookbook_path], options)
+    options = {:tags => tags, :fail_tags => fail_tags, :include_rules =>
+        include_rules}
+    review = ::FoodCritic::Linter.new.check([cookbook_path], options)
     if review.failed?
       STDERR.puts ('Extended Foodcritic Failed!!!!!')
       STDERR.puts (review)
@@ -76,8 +76,8 @@ task :foodcritic_extended do
       puts 'Extended Foodcritic Passed!'
     end
   else
-    STDERR.puts "Extended rules directory was not found at :
-{extended_rules_dir}"
+    STDERR.puts 'Extended rules directory was not found at :
+{extended_rules_dir}'
     STDERR.puts ('Extended Foodcritic did not complete!!!!!')
     raise(SystemExit, 1)
   end

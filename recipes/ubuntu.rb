@@ -16,15 +16,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-  
-include_recipe "apt"
- 
-apt_repository "chrome" do
-    uri "http://dl.google.com/linux/chrome/deb/"
-    distribution "stable"
-    components ["main"]
-    key "https://dl-ssl.google.com/linux/linux_signing_key.pub"
-    action :add
+
+include_recipe 'apt'
+
+apt_repository 'chrome' do
+  uri 'http://dl.google.com/linux/chrome/deb/'
+  distribution 'stable'
+  components %w(main)
+  key 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
+  action :add
 end
- 
-package "google-chrome-" + node['google-chrome']['track']
+
+package 'google-chrome-' + node['google-chrome']['track']
