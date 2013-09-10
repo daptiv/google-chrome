@@ -17,7 +17,7 @@ end
 # Add command to path so it can be launched from the command line
 windows_path 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' do
   only_if { node['google-chrome']['windows']['add_to_path'] }
-  action :add 
+  action :add
 end
 
 # Set Chrome as the default web browser
