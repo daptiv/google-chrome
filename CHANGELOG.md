@@ -9,6 +9,10 @@ This file is used to list changes made in each version of google-chrome.
 
 * Added fedora support - Rilindo Foster <rilindo.foster@monzell.com>
 
+## 0.1.2
+
+* Fixed authorship - giving credit where is due. 
+
 - - - 
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
