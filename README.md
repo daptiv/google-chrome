@@ -30,7 +30,11 @@ Install Google Chrome (Chromium) for Fedora
 
 # Authors
 
-Author::Rilindo Foster, originally Shawn Neal
+Author::originally Shawn Neal
+
+# Contributors
+
+Contributor::Rilindo Foster <rilindo.foster@monzell.com>
 
 # TODO
 
