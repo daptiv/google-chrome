@@ -9,6 +9,8 @@
 
 if platform?('windows')
   include_recipe 'google-chrome::windows'
+elsif platform?('fedora')
+  include_recipe 'google-chrome::fedora'
 else
   include_recipe 'google-chrome::ubuntu'
 end
