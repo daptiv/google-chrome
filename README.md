@@ -1,6 +1,6 @@
 # google-chrome cookbook
 
-Installs Google Chrome for Windows or Ubuntu
+Installs Google Chrome for Windows, Fedora Ubuntu
 
 # Requirements
 
@@ -8,7 +8,7 @@ Installs Google Chrome for Windows or Ubuntu
 
 # Attributes
 
-* `['google-chrome']['track']` - The version of Chrome to track on Ubuntu, defaults to stable. Can be set to 'beta' etc.
+* `['google-chrome']['track']` - The version of Chrome to track, defaults to stable. Can be set to 'beta' etc.
 
 # Recipes
 
@@ -24,6 +24,15 @@ ubuntu
 -------
 Install Google Chrome (Chromium) for Ubuntu
 
-# Author
+fedora
+-------
+Install Google Chrome (Chromium) for Fedora
 
-Author:: Shawn Neal
+# Authors
+
+Author::Rilindo Foster, originally Shawn Neal
+
+# TODO
+
+* Update code to support requirements per https://support.google.com/chrome/answer/95411?hl=en
+* Add RHEL/CentOS support once that is availabe. Monitoring https://code.google.com/p/chromium/issues/detail?id=227320

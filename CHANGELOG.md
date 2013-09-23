@@ -5,6 +5,10 @@ This file is used to list changes made in each version of google-chrome.
 
 * Added changelog for google-chrome.
 
+## 0.1.1
+
+* Added fedora support - Rilindo Foster <rilindo.foster@monzell.com>
+
 - - - 
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
