@@ -11,9 +11,9 @@ depends          'windows', '>= 1.2.6'
 %W{ubuntu fedora}.each do |os|
   supports os
   case os
-    when 'fedora'
-      depends 'yum'
-    when 'ubuntu'
-      depends 'apt'
+  when 'fedora'
+    depends 'yum'
+  when 'ubuntu'
+    depends 'apt'
   end
 end
