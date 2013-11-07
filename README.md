@@ -30,9 +30,14 @@ Install Google Chrome (Chromium) for Fedora
 
 # Authors
 
-Author::Rilindo Foster, originally Shawn Neal
+Author::Shawn Neal
+
+# Contributors
+
+Contributor::Rilindo Foster <rilindo.foster@monzell.com>
 
 # TODO
 
 * Update code to support requirements per https://support.google.com/chrome/answer/95411?hl=en
 * Add RHEL/CentOS support once that is availabe. Monitoring https://code.google.com/p/chromium/issues/detail?id=227320
+* OpenSUSE and Debian support coming as soon as I can get my VMs up and running. :)
