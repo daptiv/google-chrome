@@ -1,3 +1,3 @@
-source 'http://localhost:26200'
+source 'http://berkshelfapi.daptiv.com'
 
 metadata
