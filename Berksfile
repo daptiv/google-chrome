@@ -1,3 +1,3 @@
-site :opscode
+source 'http://localhost:26200'
 
 metadata
