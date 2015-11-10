@@ -2,7 +2,7 @@ default['google-chrome']['track'] = 'stable'
 
 default['google-chrome']['windows']['package_name'] = 'Google Chrome'
 default['google-chrome']['windows']['url'] =
-  'http://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi'
+  'http://dl.google.com/edgedl/chrome/install/googlechromestandaloneenterprise64.msi'
 
 default['google-chrome']['windows']['checksum'] =
-  '5758598caec389a690acc3f29958f3af2cbb087a266f5e151321a477eaba59b4'
+  '92f77fd6f9d009845f7b976603655cbeb458e8056dda23749f3d1824e901f032'
