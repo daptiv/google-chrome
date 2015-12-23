@@ -13,7 +13,7 @@ platforms:
       box_url: http://vagrantboxes.hq.daptiv.com/vagrant/boxes/virtualbox_ubuntu-14.04_chef-12.4.1_1.0.7.box
   - name: windows2012r2
     driver:
-      box: daptiv/windows2012r2_chef11
+      box: daptiv/windows2012r2_chef12
     driver_config:
       communicator: winrm
     transport:
