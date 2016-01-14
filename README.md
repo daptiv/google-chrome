@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/daptiv/google-chrome.png)](http://travis-ci.org/daptiv/google-chrome)
+
 # google-chrome cookbook
 
 Installs Google Chrome for Windows, Fedora Ubuntu
