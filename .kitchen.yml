@@ -7,14 +7,12 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-14.04
+  - name: ubuntu-14.04-virtualbox
     driver:
-      box: virtualbox_ubuntu-14.04_chef-12.4.1_1.0.7
-      box_url: http://vagrantboxes.hq.daptiv.com/vagrant/boxes/virtualbox_ubuntu-14.04_chef-12.4.1_1.0.7.box
-  - name: windows2012r2
+      box_url: <%= ENV['UBUNTU_BOX_URL'] %>
+  - name: windows2012r2_chef12
     driver:
-      box: virtualbox_windows-2012r2_chef-12.5.1_1.0.23
-      box_url: http://artrepo.daptiv.com:8081/artifactory/vagrant-local/virtualbox_windows-2012r2_chef-12.5.1_1.0.23.box
+      box_url: <%= ENV['WINDOWS_BOX_URL'] %>
     driver_config:
       communicator: winrm
     transport:
