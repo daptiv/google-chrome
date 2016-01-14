@@ -1,6 +1,6 @@
 name 'google-chrome'
-maintainer 'Daptiv Solutions, LLC'
-maintainer_email 'sneal@daptiv.com'
+maintainer 'Changepoint'
+maintainer_email 'heath.snow@changepoint.com'
 license 'All rights reserved'
 description 'Installs/Configures Google Chrome'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
