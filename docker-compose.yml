@@ -21,6 +21,7 @@ services:
       EC2_SUBNET_ID: ${EC2_SUBNET_ID}
       EC2_INSTANCE_TYPE: ${EC2_INSTANCE_TYPE}
       EC2_AMI: ${EC2_AMI}
+      EC2_UBUNTU_AMI: ${EC2_UBUNTU_AMI}
       EC2_SG: ${EC2_SG}
       LATEST_PPM_PACKAGE: ${LATEST_PPM_PACKAGE}
       CHEF_DATA_BAGS: /chef-repo/data_bags
@@ -35,5 +36,5 @@ services:
     command: |
       bash -c 'bash -s <<EOF
       echo "Please enter the command to execute:"
-      echo "Ex: docker-compose run --rm test chef exec bundle install"
+      echo "Ex: docker-compose run --rm test chef exec rake"
       EOF'
