@@ -27,5 +27,5 @@ task :spec do
 end
 
 task :kitchen do
-  sh 'chef exec kitchen converge -l debug'
+  sh 'chef exec kitchen converge -c'
 end
