@@ -4,4 +4,4 @@ gemfile:
 rvm:
   - 2.1.6
 bundler_args: --path .vendor
-script: bundle exec rake
+script: bundle exec rake --rakefile rakefile_travis.rb
