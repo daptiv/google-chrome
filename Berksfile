@@ -1,3 +1,3 @@
-source 'http://berkshelfapi.daptiv.com'
+source :chef_server
 
 metadata
