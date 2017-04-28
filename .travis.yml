@@ -2,6 +2,6 @@ language: ruby
 gemfile:
    - Gemfile
 rvm:
-  - 2.1.6
+  - 2.1.8
 bundler_args: --path .vendor
 script: bundle exec rake --rakefile rakefile_travis.rb
