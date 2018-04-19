@@ -21,8 +21,8 @@ include_recipe 'yum'
 
 yum_repository 'google-chrome' do
   description 'Google Chrome repository'
-  url 'http://dl.google.com/linux/chrome/rpm/stable/$basearch'
-  key 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
+  baseurl 'http://dl.google.com/linux/chrome/rpm/stable/$basearch'
+  gpgkey 'https://dl-ssl.google.com/linux/linux_signing_key.pub'
   action :add
 end
 
