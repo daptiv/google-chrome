@@ -4,6 +4,10 @@
 
 Installs Google Chrome for Windows, Fedora Ubuntu
 
+# DEPRECATION
+
+This cookbook is deprecated.
+
 # Requirements
 
 # Usage
